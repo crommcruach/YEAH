@@ -1,0 +1,8 @@
+[
+  {
+    "RequestType": "GET",
+    "RequestURL": "/plugins/helloworld",
+    "RequestCommand": "./endpoints/GET/myPlugin.ps1",
+    "ResponseContentType": "text/html"
+  }
+]

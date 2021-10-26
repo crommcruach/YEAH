@@ -1,0 +1,16 @@
+{
+  "UserData": [
+    {
+      "SystemAuthString": "abcd",
+      "UserName": "RestServer"
+    },
+    {
+      "SystemAuthString": "1234",
+      "UserName": "client"
+    },
+    {
+      "SystemAuthString": "abcd1234",
+      "UserName": "DemoClient.PowerShellDemo.io"
+    }
+  ]
+}

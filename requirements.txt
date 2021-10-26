@@ -1,0 +1,8 @@
+#get modules
+#template module
+Install-Module -name Poshstache
+
+#create ssl certificate
+$cert=New-SelfSignedCertificate -DnsName localhost -CertStoreLocation cert:\LocalMachine\My -NotAfter (Get-Date).AddYears(10)
+#add ssl thumbprint to config add app-guid to config and u r done 
+$cert.Thumbprint|out-file thumbrint.txt

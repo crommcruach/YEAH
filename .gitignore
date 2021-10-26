@@ -1,3 +1,4 @@
-/output/
-RestPS/.DS_Store
-.DS_Store
+/log/*
+/files/*
+/test/*
+mergedroutes.json

@@ -1,0 +1,57 @@
+[
+  {
+    "RequestType": "GET",
+    "RequestURL": "/api/status",
+    "RequestCommand": "return 1"
+  },
+  {
+    "RequestType": "GET",
+    "RequestURL": "/api/routes/add",
+    "RequestCommand": "Set-Route.ps1"
+  },
+  {
+    "RequestType": "GET",
+    "RequestURL": "/api/routes/list",
+    "RequestCommand": "Get-Routes.ps1"
+  },
+  {
+    "RequestType": "GET",
+    "RequestURL": "/",
+    "RequestCommand": "return  '<h1>It Works!</h1>'",
+    "ResponseContentType": "text/html"
+  },
+  {
+    "RequestType": "GET",
+    "RequestURL": "/forms",
+    "RequestCommand": "get-forms.ps1",
+    "ResponseContentType": "text/html"
+  },
+  {
+    "RequestType": "GET",
+    "RequestURL": "/auth/logon",
+    "RequestCommand": "get-logon.ps1",
+    "ResponseContentType": "text/html"
+  },
+  {
+    "RequestType": "POST",
+    "RequestURL": "/api/auth/logon",
+    "RequestCommand": "set-logon.ps1"
+  },
+  {
+    "RequestType": "GET",
+    "RequestURL": "/files/upload",
+    "RequestCommand": "get-upload.ps1",
+    "ResponseContentType": "text/html"
+  },
+  {
+    "RequestType": "POST",
+    "RequestURL": "/api/files/upload",
+    "RequestCommand": "upload-file.ps1"
+  },
+  {
+    "RequestType": "GET",
+    "RequestURL": "/pshtest",
+    "RequestCommand": "get-pshtest.ps1",
+    "ResponseContentType": "text/html"
+  }
+]

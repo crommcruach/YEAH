@@ -1,0 +1,50 @@
+<div class="back">
+    <div class="div-center">
+        <div class="content">
+            <h3>Login</h3>
+            <hr />
+            <form id="myForm" action="/api/auth/logon" method="POST">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input name="password" type="password" class="form-control" id="exampleInputPassword1"
+                        placeholder="Password">
+                </div>
+                <input id="fromUrl" name="fromUrl" type="text" value="{{url}}">
+                <button type="submit" class="btn btn-primary">Login</button>
+                <hr />
+                <button onclick="location.href='/signup';" type="button" class="btn btn-link">Signup</button>
+                <button onclick="location.href='/forgottpass';" type="button" class="btn btn-link">Forgot
+                    Password</button>
+                <button onclick="location.href='/changepass';" type="button" class="btn btn-link">Change
+                    Password</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var frm = $('#myForm');
+    var url = $('#fromUrl').val();
+    frm.submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            success: function (data) {
+                console.log('Submission was successful.');
+                console.log(data);
+                window.open(url, "_self")
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(Data);
+            },
+        });
+    });
+</script>

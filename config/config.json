@@ -1,0 +1,51 @@
+{
+  "LocalRoot": "C:\\Users\\cromm\\OneDrive\\YEAH\\bin\\",
+  "serverName": "localhost",
+  "Port": "8888",
+  "Security": {
+    "VerificationType": "VerifyYeahAuth",
+    "@VerificationTypes": [
+      "VerifyRootCA",
+      "VerifySubject",
+      "VerifyUserAuth",
+      "VerifyBasicAuth",
+      "VerifyYeahAuth"
+    ],
+    "VerifyClientIP": false,
+    "SSLThumbprint": "296CCBB662D0726C773D764ED4812EAC83BB64FE",
+    "AppGuid": "00112233-4455-6677-8899-AABBCCDDEEFF",
+    "SessionLifetime": 1440
+  },
+  "LogFolder": "..\\log\\",
+  "LogFile": "Yeah.log",
+  "LogLevel": "ALL",
+  "@LogLevels": [
+    "ALL",
+    "TRACE",
+    "DEBUG",
+    "INFO",
+    "WARN",
+    "ERROR",
+    "FATAL",
+    "CONSOLEONLY",
+    "OFF"
+  ],
+  "FilesFolder": "..\\files\\",
+  "FilesHeader": "YEAH File Server",
+  "HtmlFolder": "..\\html\\",
+  "EndpointFolder": "..\\endpoints\\",
+  "RoutesFile": "routes.json",
+  "RoutesMergedFile": "mergedroutes.json",
+  "RoutesFolder": "..\\config\\",
+  "AccountsFolder": "..\\config\\",
+  "AccountsFile": "yeahUserAuth.json",
+  "PluginFolder": "..\\plugins\\",
+  "UrlAuthExceptionFolder": "..\\config\\",
+  "URLExceptionAuthFile": "urlAuthExceptionList.json",
+  "IPAuthFile": "ipAuth.json",
+  "IPAuthFolder": "..\\config\\",
+  "SMTPIp": "127.0.0.1",
+  "SMTPPort": 25,
+  "SMPTSenderAddress": "admin@yeah.lan",
+  "SMTPMock": true
+}
